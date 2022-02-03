@@ -1,0 +1,15 @@
+<h1>Harry Potter</h1>
+<h1>Lista de <span style="color:red">{{chosenHouse}}</span> </h1>
+
+<h2>Escoge una casa:</h2>
+<button (click)="show($event)">Gryffindor</button>
+<button (click)="show($event)">Ravenclaw</button>
+<button (click)="show($event)">Slytherin</button>
+
+<ul>
+
+    <li *ngFor="let p of casa">
+        <span style="color: rgb(19, 88, 161); font-weight: bold;">{{p.name}}</span> --> <span style="color: rgb(153, 32, 44); font-weight: bold;">{{p.gender}}</span> ---> {{p.house}}
+    </li>
+</ul>
+<hr>
